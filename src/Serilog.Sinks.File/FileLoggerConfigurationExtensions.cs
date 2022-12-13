@@ -539,7 +539,7 @@ namespace Serilog
                     if (shared)
                     {
 #pragma warning disable 618
-                        sink = new SharedFileSink(path, formatter, fileSizeLimitBytes, encoding);
+                        sink = new Serilog.Sinks.File.SharedFileSink(path, formatter, fileSizeLimitBytes, encoding);
 #pragma warning restore 618
                     }
                     else
